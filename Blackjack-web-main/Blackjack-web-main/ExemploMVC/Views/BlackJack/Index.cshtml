@@ -1,0 +1,96 @@
+﻿
+@{ ViewData["Title"] = "BlackJack"; }
+
+<h1>Jogo BlackJack</h1>
+<br />
+<br />
+
+<div class="container-fluid">
+    <div id="alertWinner"class="alert alert-warning alert-dismissible fade" role="alert">
+        <strong id="vencedor" name="vencedor"></strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <h3>
+                Partida
+            </h3>
+            <br /><br />
+            <button type="button" class="btn btn-success" name="btn_iniciar" id="btn_iniciar" onclick="iniciar()">
+                Iniciar
+            </button>
+            <button type="button" disabled class="btn btn-success" name="btn_reiniciar" id="btn_reiniciar" onclick="reiniciar()">
+                Reiniciar
+            </button>
+            <br /><br />
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="badge badge-default" id="jogador1">0</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="badge badge-default">X</span>
+                </div>
+                <div class="col-md-2">
+                    <span class="badge badge-default" id="jogador2">0</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="badge badge-default">X</span>
+                </div>
+                <div class="col-md-2">
+                    <span class="badge badge-default" id="jogador3">0</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <h3>
+                Jogador 1
+            </h3>
+            <br /><br />
+            <img alt="carta1" src="/images/0.jpg" height="350" width="250" name="cartas1" id="cartas1">
+            <br /><br />
+            <button type="button" disabled class="btn btn-success" name="btn_jogador_1" id="btn_jogador_1" onclick="jogador1()">
+                Jogar
+            </button>
+            <button type="button" disabled class="btn btn-success" name="btn_parar_1" id="btn_parar_1" onclick="parar1()">
+                Parar
+            </button>
+        </div>
+        <div class="col-md-3">
+
+            <h3>
+                Jogador 2
+            </h3>
+            <br /><br />
+            <img alt="carta2" src="/images/0.jpg" height="350" width="250" name="cartas2" id="cartas2">
+            <br /><br />
+            <button type="button" disabled class="btn btn-success" name="btn_jogador_2" id="btn_jogador_2" onclick="jogador2()">
+                Jogar
+            </button>
+            <button type="button" disabled class="btn btn-success" name="btn_parar_2" id="btn_parar_2" onclick="parar2()">
+                Parar
+            </button>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <h3>
+                Jogador 3
+            </h3>
+            <br /><br />
+            <img alt="carta3" src="/images/0.jpg" height="350" width="250" name="cartas3" id="cartas3">
+            <br /><br />
+            <button type="button" disabled class="btn btn-success" name="btn_jogador_3" id="btn_jogador_3" onclick="jogador3()">
+                Jogar
+            </button>
+            <button type="button" disabled class="btn btn-success" name="btn_parar_3" id="btn_parar_3" onclick="parar3()">
+                Parar
+            </button>
+
+        </div>
+
+    </div>
+</div>
